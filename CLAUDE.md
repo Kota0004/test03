@@ -143,6 +143,10 @@ notes: 〇〇についてのメモを追加
 
 - **`nu-roomradar/nust-room-search`（RoomRadar）は読み取り専用。** 編集・コミット・push・
   Issue や PR の作成など、書き込みは一切しない（2026-09-24 ユーザー指示）
+  - 例外は、ユーザーがその変更を明示的に頼んだときだけ。その変更に限って書き込む。
+    2026-09-25: Cloudflare の security-audit スキルを `.claude/skills/security-audit/` に追加
+  - RoomRadar は main への push で本番に自動デプロイされ、仮予約・使用中報告が消える。
+    平日 9:00–20:30 に main へ push するときは、先にユーザーに伝える（RoomRadar 側の CLAUDE.md の規則）
 - 読んでわかった事実は `ideas/*.md` などノート側に書く。出典として、リポジトリ名と
   確認したコミットを添える
 - 相手のリポジトリにある `CLAUDE.md` は、そのリポジトリを編集するときのためのルール。
